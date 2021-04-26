@@ -17,5 +17,7 @@ mdotconfig remote -v
 Basic usage example:
 
 mdotconfig add /path/to/file
+
 mdotconfig commit -m "A short message"
+
 mdotconfig push origin master
