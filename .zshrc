@@ -2,10 +2,14 @@
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
-#IMPORT ALIASES
+#IMPORT ALIASES and functions
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
+
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile #Can change it to another place
