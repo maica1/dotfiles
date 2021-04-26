@@ -6,7 +6,7 @@ function cl() {
     fi;
     builtin cd "${DIR}" && \
     # use your preferred ls command
-        ls -F --color=auto
+        ls -lha --color=auto
 }
 
 function cfgssh() {

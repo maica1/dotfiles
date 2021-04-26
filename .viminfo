@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/UserKnown
+~MSle0~/aliases
 
 # Last Substitute Search Pattern:
 ~MSle0&LOAD DATA INFILE
@@ -20,14 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1619412927,,"q"
+:q!
+|2,0,1619414333,,"q!"
 :wq
-|2,0,1619412805,,"wq"
+|2,0,1619414308,,"wq"
+:q
+|2,0,1619414242,,"q"
 :w
 |2,0,1618970684,,"w"
-:q!
-|2,0,1618885198,,"q!"
 :s
 |2,0,1618847626,,"s"
 :%s/LOAD DATA INFILE/LOAD DATA LOCAL INFILE/gc
@@ -74,6 +74,10 @@ $
 |2,0,1615319223,,"%s/CREATE TABLE `[a-zA-Z]\\+`//gn"
 
 # Search String History (newest to oldest):
+?/aliases
+|2,1,1619414226,47,"aliases"
+?/func
+|2,1,1619414210,47,"func"
 ?/For
 |2,1,1618962516,47,"For"
 ?/UserKnown
@@ -88,8 +92,6 @@ $
 |2,1,1618884531,47,"alias"
 ? @$
 |2,1,1618884385,,"@$"
-?/func
-|2,1,1618871378,47,"func"
 ?/public
 |2,1,1618846672,47,"public"
 ?/provsion
@@ -179,38 +181,170 @@ $
 	Host *--b
 |3,0,9,1,1,0,1618962089,"Host *--b"
 ""-	CHAR	0
-	g
-|3,1,36,0,1,0,1619410335,"g"
+	F
+|3,1,36,0,1,0,1619414301,"F"
 
 # File marks:
-'0  4  74  ~/.bash_aliases
-|4,48,4,74,1619412927,"~/.bash_aliases"
-'1  4  74  ~/.bash_aliases
-|4,49,4,74,1619412805,"~/.bash_aliases"
-'2  4  14  ~/.bash_aliases
-|4,50,4,14,1619410350,"~/.bash_aliases"
-'3  4  14  ~/.bash_aliases
-|4,51,4,14,1619410350,"~/.bash_aliases"
-'4  4  70  ~/.bash_aliases
-|4,52,4,70,1619410314,"~/.bash_aliases"
-'5  4  70  ~/.bash_aliases
-|4,53,4,70,1619410314,"~/.bash_aliases"
-'6  4  70  ~/.bash_aliases
-|4,54,4,70,1619410314,"~/.bash_aliases"
+'0  1  0  ~/.viminfo
+|4,48,1,0,1619414333,"~/.viminfo"
+'1  9  14  ~/.bash_functions
+|4,49,9,14,1619414308,"~/.bash_functions"
+'2  104  16  ~/.bashrc
+|4,50,104,16,1619414242,"~/.bashrc"
+'3  4  74  ~/.bash_aliases
+|4,51,4,74,1619412927,"~/.bash_aliases"
+'4  4  74  ~/.bash_aliases
+|4,52,4,74,1619412805,"~/.bash_aliases"
+'5  4  14  ~/.bash_aliases
+|4,53,4,14,1619410350,"~/.bash_aliases"
+'6  4  14  ~/.bash_aliases
+|4,54,4,14,1619410350,"~/.bash_aliases"
 '7  4  70  ~/.bash_aliases
 |4,55,4,70,1619410314,"~/.bash_aliases"
-'8  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,56,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
-'9  77  16  ~/.zshrc
-|4,57,77,16,1619408833,"~/.zshrc"
+'8  4  70  ~/.bash_aliases
+|4,56,4,70,1619410314,"~/.bash_aliases"
+'9  4  70  ~/.bash_aliases
+|4,57,4,70,1619410314,"~/.bash_aliases"
 
 # Jumplist (newest first):
+-'  1  0  ~/.viminfo
+|4,39,1,0,1619414333,"~/.viminfo"
+-'  34  0  ~/.viminfo
+|4,39,34,0,1619414331,"~/.viminfo"
+-'  9  14  ~/.bash_functions
+|4,39,9,14,1619414308,"~/.bash_functions"
+-'  9  14  ~/.bash_functions
+|4,39,9,14,1619414308,"~/.bash_functions"
+-'  14  60  ~/.bash_functions
+|4,39,14,60,1619414247,"~/.bash_functions"
+-'  14  60  ~/.bash_functions
+|4,39,14,60,1619414247,"~/.bash_functions"
+-'  104  16  ~/.bashrc
+|4,39,104,16,1619414242,"~/.bashrc"
+-'  104  16  ~/.bashrc
+|4,39,104,16,1619414242,"~/.bashrc"
+-'  104  16  ~/.bashrc
+|4,39,104,16,1619414242,"~/.bashrc"
+-'  104  16  ~/.bashrc
+|4,39,104,16,1619414242,"~/.bashrc"
+-'  101  10  ~/.bashrc
+|4,39,101,10,1619414239,"~/.bashrc"
+-'  90  15  ~/.bashrc
+|4,39,90,15,1619414239,"~/.bashrc"
+-'  101  10  ~/.bashrc
+|4,39,101,10,1619414239,"~/.bashrc"
+-'  90  15  ~/.bashrc
+|4,39,90,15,1619414239,"~/.bashrc"
+-'  101  10  ~/.bashrc
+|4,39,101,10,1619414239,"~/.bashrc"
+-'  90  15  ~/.bashrc
+|4,39,90,15,1619414239,"~/.bashrc"
+-'  101  10  ~/.bashrc
+|4,39,101,10,1619414239,"~/.bashrc"
+-'  90  15  ~/.bashrc
+|4,39,90,15,1619414239,"~/.bashrc"
+-'  75  48  ~/.bashrc
+|4,39,75,48,1619414238,"~/.bashrc"
+-'  75  48  ~/.bashrc
+|4,39,75,48,1619414238,"~/.bashrc"
+-'  75  48  ~/.bashrc
+|4,39,75,48,1619414238,"~/.bashrc"
+-'  75  48  ~/.bashrc
+|4,39,75,48,1619414238,"~/.bashrc"
+-'  105  14  ~/.bashrc
+|4,39,105,14,1619414237,"~/.bashrc"
+-'  105  14  ~/.bashrc
+|4,39,105,14,1619414237,"~/.bashrc"
+-'  105  14  ~/.bashrc
+|4,39,105,14,1619414237,"~/.bashrc"
+-'  105  14  ~/.bashrc
+|4,39,105,14,1619414237,"~/.bashrc"
+-'  134  23  ~/.bashrc
+|4,39,134,23,1619414226,"~/.bashrc"
+-'  134  23  ~/.bashrc
+|4,39,134,23,1619414226,"~/.bashrc"
+-'  134  23  ~/.bashrc
+|4,39,134,23,1619414226,"~/.bashrc"
+-'  134  23  ~/.bashrc
+|4,39,134,23,1619414226,"~/.bashrc"
+-'  133  21  ~/.bashrc
+|4,39,133,21,1619414221,"~/.bashrc"
+-'  133  21  ~/.bashrc
+|4,39,133,21,1619414221,"~/.bashrc"
+-'  133  21  ~/.bashrc
+|4,39,133,21,1619414221,"~/.bashrc"
+-'  133  21  ~/.bashrc
+|4,39,133,21,1619414221,"~/.bashrc"
+-'  124  0  ~/.bashrc
+|4,39,124,0,1619414210,"~/.bashrc"
+-'  124  0  ~/.bashrc
+|4,39,124,0,1619414210,"~/.bashrc"
+-'  124  0  ~/.bashrc
+|4,39,124,0,1619414210,"~/.bashrc"
+-'  124  0  ~/.bashrc
+|4,39,124,0,1619414210,"~/.bashrc"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412927,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412927,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412927,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412927,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412927,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412927,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412927,"~/.bash_aliases"
 -'  4  74  ~/.bash_aliases
 |4,39,4,74,1619412927,"~/.bash_aliases"
 -'  4  74  ~/.bash_aliases
 |4,39,4,74,1619412805,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412805,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412805,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412805,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412805,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412805,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412805,"~/.bash_aliases"
+-'  4  74  ~/.bash_aliases
+|4,39,4,74,1619412805,"~/.bash_aliases"
 -'  4  14  ~/.bash_aliases
 |4,39,4,14,1619410350,"~/.bash_aliases"
+-'  4  14  ~/.bash_aliases
+|4,39,4,14,1619410350,"~/.bash_aliases"
+-'  4  14  ~/.bash_aliases
+|4,39,4,14,1619410350,"~/.bash_aliases"
+-'  4  14  ~/.bash_aliases
+|4,39,4,14,1619410350,"~/.bash_aliases"
+-'  4  14  ~/.bash_aliases
+|4,39,4,14,1619410350,"~/.bash_aliases"
+-'  4  14  ~/.bash_aliases
+|4,39,4,14,1619410350,"~/.bash_aliases"
+-'  4  14  ~/.bash_aliases
+|4,39,4,14,1619410350,"~/.bash_aliases"
+-'  4  14  ~/.bash_aliases
+|4,39,4,14,1619410350,"~/.bash_aliases"
+-'  4  70  ~/.bash_aliases
+|4,39,4,70,1619410314,"~/.bash_aliases"
+-'  4  70  ~/.bash_aliases
+|4,39,4,70,1619410314,"~/.bash_aliases"
+-'  4  70  ~/.bash_aliases
+|4,39,4,70,1619410314,"~/.bash_aliases"
+-'  4  70  ~/.bash_aliases
+|4,39,4,70,1619410314,"~/.bash_aliases"
+-'  4  70  ~/.bash_aliases
+|4,39,4,70,1619410314,"~/.bash_aliases"
+-'  4  70  ~/.bash_aliases
+|4,39,4,70,1619410314,"~/.bash_aliases"
+-'  4  70  ~/.bash_aliases
+|4,39,4,70,1619410314,"~/.bash_aliases"
 -'  4  70  ~/.bash_aliases
 |4,39,4,70,1619410314,"~/.bash_aliases"
 -'  2  0  ~/.bash_aliases
@@ -221,192 +355,86 @@ $
 |4,39,2,0,1619410276,"~/.bash_aliases"
 -'  2  0  ~/.bash_aliases
 |4,39,2,0,1619410276,"~/.bash_aliases"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  1  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh
-|4,39,1,0,1619408862,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc.pre-oh-my-zsh"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  77  16  ~/.zshrc
-|4,39,77,16,1619408833,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  53  0  ~/.zshrc
-|4,39,53,0,1619408825,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408822,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  15  0  ~/.zshrc
-|4,39,15,0,1619408801,"~/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
--'  82  0  /media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc
-|4,39,82,0,1619408748,"/media/maicon/f345aa12-cc2b-4682-9b4b-4db478e63ada/mvieira/.zshrc"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
+-'  2  0  ~/.bash_aliases
+|4,39,2,0,1619410276,"~/.bash_aliases"
 
 # History of marks within files (newest to oldest):
+
+> ~/.viminfo
+	*	1619414331	0
+	"	1	0
+
+> ~/.bash_functions
+	*	1619414305	0
+	"	9	14
+	^	9	15
+	.	9	14
+	+	10	1
+	+	15	1
+	+	14	60
+	+	9	14
+
+> ~/.bashrc
+	*	1619414239	0
+	"	104	16
+	^	135	2
+	.	135	1
+	+	79	4
+	+	80	4
+	+	134	0
+	+	91	16
+	+	79	4
+	+	135	1
 
 > ~/.bash_aliases
 	*	1619412919	0
@@ -455,18 +483,6 @@ $
 	^	82	1
 	.	82	0
 	+	82	0
-
-> ~/.bashrc
-	*	1619408612	0
-	"	124	0
-	^	135	2
-	.	135	1
-	+	79	4
-	+	80	4
-	+	134	0
-	+	91	16
-	+	79	4
-	+	135	1
 
 > ~/screenlets.sh
 	*	1618992518	0
@@ -620,15 +636,6 @@ $
 	^	30	2
 	.	30	1
 	+	30	1
-
-> ~/.bash_functions
-	*	1618967391	0
-	"	14	60
-	^	14	61
-	.	14	60
-	+	10	1
-	+	15	1
-	+	14	60
 
 > ~/Documentos/Estudo/implantacao/html/index.html
 	*	1618884700	0
