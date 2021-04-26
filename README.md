@@ -1,5 +1,5 @@
 # dotfiles
-#better do this config under the dotfiles directory
+
 
 git init --bare $HOME/dotfiles
 #add to .bash_aliases
