@@ -1,5 +1,5 @@
-# dotfiles
-
+## dotfiles
+***
 
 git init --bare $HOME/dotfiles
 #add to .bash_aliases
@@ -14,7 +14,8 @@ mdotconfig remote add origin git@github.com:maica1/dotfiles.git
 mdotconfig remote -v
 
 
-Basic usage example:
+### Basic usage example:
+***
 
 mdotconfig add /path/to/file
 
