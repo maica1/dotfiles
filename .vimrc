@@ -21,3 +21,7 @@ set smartcase "scs
 set hidden
 set noswapfile
 set scrolloff=8
+
+
+#plugins
+Plug 'elzr/vim-json'
