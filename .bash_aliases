@@ -17,7 +17,6 @@ alias fd='find . -type d -name'
 #GLOBAL 
 alias H='|head'
 alias T='|tail'
-alias G='|grep'
 alias L='|less +F'
 
 #MANAGE DOTFILES
