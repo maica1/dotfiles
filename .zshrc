@@ -2,7 +2,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile #Can change it to another place
 HISTSIZE=1000
-SAVEHIST=10000
+SAVEHIST=
 setopt appendhistory autocd extendedglob notify
 
 # If you come from bash you might have to change your $PATH.
