@@ -1,0 +1,148 @@
+https://dev.mysql.com/doc/refman/5.6/en/flush.html
+
+
+#VERIFICAR PROCS E FUNCS
+    SHOW PROCEDURE STATUS where db= ?;
+    SHOW FUNCTION STATUS where db = ?;
+
+
+Criar views 
+    CREATE OR REPLACE VIEW vi_cdrs_sip3ax as select accountcode, caller_id, callee_id, call_start_time, duration, duration_block, reseller_price,reseller_rate,tipo,service_type,service from cdrs_report where reseller_id=2;
+
+    Account_code_deletado 
+    #Retorna as chamadas com  accountcode deletados
+        select id from acc_report where method='INVITE' and sip_code='200' and time between '2020-05-11 11:08:01' AND '2020-05-11 23:59:59' and accountcode not in (select account_code from sippulse.subscriber);
+    #Mesma coisa mas separado por virgula
+        select group_concat(id) from acc_report where method='INVITE' and sip_code='200' and time between '2020-05-11 11:00:01' AND '2020-05-11 23:59:59' and accountcode not in (select account_code from sippulse.subscriber);
+
+    #Verificar o pq de verdade
+        update acc_report set cdr_id='-666' where id in (GRUPO DE ID'S SEPARADOS POR VIRGULA);
+
+    #Verifica se funcionou / continua pegando a lista
+        select group_concat(id) from acc_report where method='INVITE' and sip_code='200' and time between '2020-05-11 11:08:01' AND '2020-05-11 23:59:59' and cdr_id <> '-666' and accountcode not in (select account_code from sippulse.subscriber);
+
+    select count(*) from cdrs_report where call_start_time between '2020-05-22 11:08:00' AND '2020-05-11 23:59:59' and service in ('pstn', 'did', '0800');
+
+IMPORTAR CSV PARA BANCO 
+    LOAD DATA INFILE '/tmp/stfc_cadup_2906' INTO TABLE stfc_cadup_new FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (prestadoras,cnpj,cn,prefixo,faixa_inicial,faixa_final,codigo_cnl,nome_localidade,area_local,cod_area_local,status,tipo,rn1);
+    load data infile '/tmp/subscribers_201201_hpbx_import_dulca_1.csv' into table subscriber fields terminated by ',' lines terminated by '\n' ignore 1 lines (domain,account_code,username,password,password_portal,email_address,first_name,last_name,id_profile_plan,country_code,area_code,callerid,daterange_id,active_outgoing_calls,active_incoming_calls,rec,call_fwd,fwd_busy,rings,no_answer,voicemail,vm_send_email,secretary,callgroup,pickupgroup,pincode)
+
+RESET SENHA PULSEADMIN
+    update administrator set password =md5(“#pulseadmin#”) where id =1;
+
+#SENHA DO ROOT
+    UPDATE mysql.user SET Password=PASSWORD('maica1') WHERE User='root';
+    UPDATE mysql.user SET Password=1nTegr4_361GO WHERE User='ixcintegra';
+
+#PERMISSÕES PARA USUÁRIO
+    GRANT $PERMISSAO on $BANCO.$TABELA to '$USUARIO'@'IP_ORIGEM_ACESSO' identified by 'senha';
+        #SMPRE PRECISA COLOCAR O IDENTIFIED,POR MAIS QUE U USUARIO JA EXISTA COM GRANT USAGE *.*
+        #A SENHA COLOCADA EM CLARO É ARMAZENADA CRIPTOGRAFADA
+    REVOKE $PERMISSAO on $BANCO.$TABELA FROM '$USUARIO'@'IP_ORIGEM_ACESSO' identified by 'senha'
+    SELECT user, host FROM mysql.user;
+#VERIFICA OS GRANTS
+    select * from table_privileges;
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| GRANTEE        | varchar(81)  | NO   |     |         |       |
+| TABLE_CATALOG  | varchar(512) | NO   |     |         |       |
+| TABLE_SCHEMA   | varchar(64)  | NO   |     |         |       |
+| TABLE_NAME     | varchar(64)  | NO   |     |         |       |
+| PRIVILEGE_TYPE | varchar(64)  | NO   |     |         |       |
+| IS_GRANTABLE   | varchar(3)   | NO   |     |         |       |
++----------------+--------------+------+-----+---------+-------+
+SELECT * FROM information_schema.user_privileges;
+        #MOSTRA PERMISSAO DE TODOS USERS
+
+    SHOW CREATE USER '$USER'@'IP_ORIGEM_ACESSO' \G
+
+
+#IDENTIFICAR REGISTRO PERMANENTE COM ESPAÇO
+    select username, domain, sip_user_ip from subscriber where sip_user_ip like '%, %';
+
+#BKP RESTORE
+    mysqldump -u root -p meu-database > meu-arquivo-dump.sql
+    mysqldump -u root -p meu-database < meu-arquivo-dump.sql
+    mysqldump -uroot -pvoffice14anos sippulse_reports cdrs_report --set-gtid-purged=OFF > /mnt/hd/dump_mysql_update.sql
+
+
+#Normalização faixas_iniciais
+update cadup set faixa_inicial='0000' where faixa_inicial='0';
+update cadup set faixa_final='0999' where faixa_final='999';
+#Normalização campos rn1 nulo
+UPDATE cadup, prestadoras SET cadup.rn1=prestadoras.rn1 WHERE prestadoras.cnpj=cadup.cnpj AND prestadoras.tipo IN ("E", "M") AND cadup.tipo IN ("E", "M") AND cadup.rn1 IS NULL; 
+   
+UPDATE cadup, prestadoras SET cadup.rn1=prestadoras.rn1 WHERE prestadoras.cnpj=cadup.cnpj and prestadoras.tipo=cadup.tipo;
+    
+
+#Normalização RN1 CNs TELEFONICA
+update cadup set rn1='55115' where cnpj='02558157000162' and cn like '1%';
+update cadup set rn1='55215' where cnpj='02558157000162' and cn not in ('11','12','13','14','15','16','17','18','19');
+#SETA RN1 moveis Telefonica
+update cadup set rn1='55320' where cnpj='02558157000162' and tipo='M';
+
+
+#Normalização OI
+UPDATE cadup SET rn1="55331" WHERE rn1 IS NULL AND prestadoras LIKE "%OI%" AND tipo="M" AND cn BETWEEN 40 AND 69;
+#o RN1 era 55314 antes dessa query
+update cadup set rn1='55331' where cnpj='05423963000111' and tipo='M' and cn not in ('41','42','43','44','45','46','47','48','49');
+
+
+#Normalização claro
+update cadup set rn1="55321" where cnpj="40432544000147" and tipo="M" and prefixo like "9%";
+update cadup set rn1="55121" where cnpj="40432544000147" and tipo="F";
+    
+#numero nao encontrado pela f_ati
+INSERT INTO cadup (prefixo, mcduIni, mcduFin, rn1) VALUES ('1191000', '0000', '9999', '55320');
+    
+
+
+mysqldump{
+
+    mysqldump -u root -p sippulse.dynamic_blacklist > dynbl.sql
+    --no-data
+    --routines
+    --no-create-info
+    --compact: if you want to get rid of extra comments
+    --ignore-table=db.table
+    --lock-tables=false
+    --set-gtid-purged=OFF pra não levar sugeira de replica
+    LOAD DATA INFILE '/home/suporte/blacklist_PROCON_05112020_103302.csv' INTO TABLE dynamic_blacklist FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (tn) set expiration_time='2021-12-05 12:00:00';
+}
+
+
+#APAGAR TUDO DA TABELA,INCLUSIVE ZERA INDICES E LIBERA ESPAÇO
+    mysql -h $HOSTNAME -u $USER -p$PASS -e "TRUNCATE TABLE sippulse_reports.gateway_statistics; "
+
+#RENOMEAR TABELA, útil para backups
+rename table db.table to db.table(new);
+
+#proxy bloqueado no banco
+select IP, HOST, SUM_CONNECT_ERRORS AS Errors, FIRST_SEEN, LAST_SEEN from performance_schema.host_cache where SUM_CONNECT_ERRORS!=0 order by Errors;
+
+
+tshoot  user
+SELECT USER() RequestedUserLogin,CURRENT_USER() AllowedUserLogin;
+
+
+
+#TAMANHO DAS TABELAS
+    SELECT table_name AS "Table", ROUND(((data_length + index_length) / 1024 / 1024), 2) AS "Size (MB)" FROM information_schema.TABLES WHERE table_schema = "sippulse_reports" ORDER BY (data_length + index_length) DESC;
+
+SELECT table_name "Table Name", sum( data_length + index_length ) / 1024 / 1024 / 1024 "Table ta Base Size in GiB" 
+FROM information_schema.TABLES GROUP BY table_name;  
+
+ALTER TABLE accc_report OPTIMIZE PARTITION p20210320;
+ALTER TABLE acc_report REBUILD PARTITION p20210324;
+
+
+# CORREÇÃO IMPORTAÇÃO POR GERENCIAMENTO BLUE
+update subscriber set string_acl = "LD12385T" where domain="dulca.blue.com.br";
+
+
+mysql -uroot -pvoffice14anos sippulse_reports --batch -e "select * from cdrs_report limit 500000;" | sed 's/\t/\|/g;s/^//;s/$//;s/\n//g' > /tmp/dump.csv
+
+
+mysqldump -u root -p --no-data --lock-tables=false --routines --set-gtid-purged=OFF sippulse > sippulse_schema.sql
+mysqldump -u root -p --no-create-info --lock-table=false --ignore-table=sippulse.active_dialogs --ignore-table=sippulse.prepaid_expired_credit_log --ignore-table=sippulse.prepaid_debit_schedule --ignore-table=sippulse.vi_subscriber_sms --set-gtid-purged=OFF sippulse > sippulse_data.sql
