@@ -1,5 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/maicon/Documentos/Estudo/implantacao'
-let g:netrw_dirhist_2='/home/maicon/.oh-my-zsh'
-let g:netrw_dirhist_3='/home/maicon/Documents/SipPulse/hpbx/hpbx_install'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/maicon/Documents/Estudo/LPI/centos/.vagrant'
