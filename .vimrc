@@ -11,8 +11,7 @@ packloadall
 "# autocomplete commands
    set wildmode=longest,list,full
 
-" TODO: Add spellcheck
-
+set spell spelllang=pt,en_us
 
 "# bout tabs
    set ts=3 softtabstop=3

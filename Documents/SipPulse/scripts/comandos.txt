@@ -127,6 +127,13 @@ echo 'HISTTIMEFORMAT="%d/%m/%y %T "' >> /root/.bashrc
 
 
 #VIM
+    #tabs
+    #abri arquivos em abas
+    vim -p file1 file2
+    #abre arquivo de dentro do vim
+    gf
+    #move from tabs
+    gt gT
     #substitui todo foo por bar com confirmação
     :%s/foo/bar/gc
     #find delete tudo contendo profile
@@ -260,3 +267,4 @@ chown -R glassfish.mysql /var/lib/sippulse
 chmod 775 /var/lib/sippulse
 
 
+rsync -qrW --remove-source-files --progress --log-file=/tmp/rsync.log /var/www/html /STORAGE-MAI-2021-2
