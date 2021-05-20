@@ -127,6 +127,8 @@ echo 'HISTTIMEFORMAT="%d/%m/%y %T "' >> /root/.bashrc
 
 
 #VIM
+    #file explorer
+    :Lex
     #tabs
     #abri arquivos em abas
     vim -p file1 file2
@@ -134,6 +136,10 @@ echo 'HISTTIMEFORMAT="%d/%m/%y %T "' >> /root/.bashrc
     gf
     #move from tabs
     gt gT
+    #dicionario
+    zg - adiciona palavra ao dicionarioi
+    zw - adiciona como palavra errada
+    zug - desfaz o zg, [ zuw ]:
     #substitui todo foo por bar com confirmação
     :%s/foo/bar/gc
     #find delete tudo contendo profile
