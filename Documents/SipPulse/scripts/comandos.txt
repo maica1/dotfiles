@@ -179,7 +179,14 @@ echo 'HISTTIMEFORMAT="%d/%m/%y %T "' >> /root/.bashrc
     #deleta toda match do arquivo(-i muda o arqquivo)
     sed -i '/pattern/d' arquivo.txt
 
+#trunca arquivos com permissao de root
+sudo truncate -s 0 /var/log/**/*.log
+sudo sh -c '> filename'
 
+
+
+
+#FREESWITCH
 /usr/local/fs/scripts/facilitie
 
 
