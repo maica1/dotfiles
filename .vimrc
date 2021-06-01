@@ -7,11 +7,10 @@ packloadall
    set encoding=utf-8
    map <leader>s :!clear && shellcheck % <CR>
    map <leader>S :%s//g<left><left>
-
 "# autocomplete commands
    set wildmode=longest,list,full
 
-set spell spelllang=pt,en_us
+   map <F7> set spell spelllang=pt,en_us
 
 "# bout tabs
    set ts=3 softtabstop=3
@@ -44,4 +43,6 @@ set spell spelllang=pt,en_us
    set noswapfile
    set scrolloff=8
 
-
+"config to ident yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+let g:indentLine_char = '⦙'

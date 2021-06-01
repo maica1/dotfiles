@@ -135,3 +135,6 @@ fi
 
 #magic-space completion
 bindkey ' ' magic-space
+
+# Created by `pipx` on 2021-05-26 20:01:54
+export PATH="$PATH:/home/maicon/.local/bin"

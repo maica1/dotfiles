@@ -7,7 +7,7 @@ https://dev.mysql.com/doc/refman/5.6/en/flush.html
 
 
 Criar views 
-    CREATE OR REPLACE VIEW vi_cdrs_sip3ax as select accountcode, caller_id, callee_id, call_start_time, duration, duration_block, reseller_price,reseller_rate,tipo,service_type,service from cdrs_report where reseller_id=2;
+    CREATE OR REPLACE VIEW vi_cdrs_sip3ax as select accountcode, caller_id, callee_id, call_start_time, duration, duration_block, reseller_price,reseller_rate,tipo,service_type,service from cdrs_report where reseller_id=4;
 
     Account_code_deletado 
     #Retorna as chamadas com  accountcode deletados

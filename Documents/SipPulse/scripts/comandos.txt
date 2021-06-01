@@ -11,6 +11,7 @@ ngrep -d any -pqtW byline port 5060 or port 9060;
 
 
 ldd - print shared object dependencies
+objdump -p /path/to/program | grep NEEDED
 
 Tmux{
     
@@ -71,6 +72,8 @@ Linux {
 #COMANDOS DE REDE
     nano /etc/network/interfaces
     netstat -tulpn 
+    #exibe brief de ip colorido
+    ip -c -4 -br a
 
 #PROCURAR ARQUIVOS SO
     find / -name teste_vinea.wav
@@ -279,5 +282,10 @@ Cron - /usr/local/bin/*.sh
 chown -R glassfish.mysql /var/lib/sippulse 
 chmod 775 /var/lib/sippulse
 
+#lista dos arquivos do programa
+lsof  /bin/binario 
 
-rsync -qrW --remove-source-files --progress --log-file=/tmp/rsync.log /var/www/html /STORAGE-MAI-2021-2
+#du com menuzinho
+ncdu
+
+
