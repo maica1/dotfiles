@@ -23,6 +23,10 @@ Criar views
 
     select count(*) from cdrs_report where call_start_time between '2020-05-22 11:08:00' AND '2020-05-11 23:59:59' and service in ('pstn', 'did', '0800');
 
+EXPORTAR CSV DO BANCO
+    mysql -uroot -p meofat --batch -e "select * from contract;" | sed 's/\t/\|/g;s/^//;s/$//;s/\n//g' > dump_contract_$(date +%d-%m-%y).csv
+    select id,fantasy_name, documentation from company into outfile '/tmp/companys.csv' fields enclosed by '"' terminated by ';' escaped by '"' lines terminated by '\r\n';
+
 IMPORTAR CSV PARA BANCO 
     LOAD DATA INFILE '/tmp/stfc_cadup_2906' INTO TABLE stfc_cadup_new FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (prestadoras,cnpj,cn,prefixo,faixa_inicial,faixa_final,codigo_cnl,nome_localidade,area_local,cod_area_local,status,tipo,rn1);
     load data infile '/tmp/subscribers_201201_hpbx_import_dulca_1.csv' into table subscriber fields terminated by ',' lines terminated by '\n' ignore 1 lines (domain,account_code,username,password,password_portal,email_address,first_name,last_name,id_profile_plan,country_code,area_code,callerid,daterange_id,active_outgoing_calls,active_incoming_calls,rec,call_fwd,fwd_busy,rings,no_answer,voicemail,vm_send_email,secretary,callgroup,pickupgroup,pincode)
@@ -130,8 +134,7 @@ SELECT USER() RequestedUserLogin,CURRENT_USER() AllowedUserLogin;
 #TAMANHO DAS TABELAS
     SELECT table_name AS "Table", ROUND(((data_length + index_length) / 1024 / 1024), 2) AS "Size (MB)" FROM information_schema.TABLES WHERE table_schema = "sippulse_reports" ORDER BY (data_length + index_length) DESC;
 
-SELECT table_name "Table Name", sum( data_length + index_length ) / 1024 / 1024 / 1024 "Table ta Base Size in GiB" 
-FROM information_schema.TABLES GROUP BY table_name;  
+SELECT table_name "Table Name", sum( data_length + index_length ) / 1024 / 1024 / 1024 "Table ta Base Size in GiB" FROM information_schema.TABLES GROUP BY table_name;  
 
 ALTER TABLE accc_report OPTIMIZE PARTITION p20210320;
 ALTER TABLE acc_report REBUILD PARTITION p20210324;
@@ -146,3 +149,5 @@ mysql -uroot -pvoffice14anos sippulse_reports --batch -e "select * from cdrs_rep
 
 mysqldump -u root -p --no-data --lock-tables=false --routines --set-gtid-purged=OFF sippulse > sippulse_schema.sql
 mysqldump -u root -p --no-create-info --lock-table=false --ignore-table=sippulse.active_dialogs --ignore-table=sippulse.prepaid_expired_credit_log --ignore-table=sippulse.prepaid_debit_schedule --ignore-table=sippulse.vi_subscriber_sms --set-gtid-purged=OFF sippulse > sippulse_data.sql
+
+
