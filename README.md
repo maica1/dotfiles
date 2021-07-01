@@ -1,7 +1,7 @@
 # dotfiles
 ***
 
-##TODO: 
+## TODO: 
 * Remove sensitive data with includes
 * Remove often-changing files
 * Set repo public
