@@ -1,5 +1,10 @@
-## dotfiles
+# dotfiles
 ***
+
+##TODO: 
+* Remove sensitive data with includes
+* Remove often-changing files
+* Set repo public
 
 git init --bare $HOME/dotfiles
 #add to .bash_aliases
