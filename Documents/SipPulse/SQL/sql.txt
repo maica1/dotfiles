@@ -151,3 +151,10 @@ mysqldump -u root -p --no-data --lock-tables=false --routines --set-gtid-purged=
 mysqldump -u root -p --no-create-info --lock-table=false --ignore-table=sippulse.active_dialogs --ignore-table=sippulse.prepaid_expired_credit_log --ignore-table=sippulse.prepaid_debit_schedule --ignore-table=sippulse.vi_subscriber_sms --set-gtid-purged=OFF sippulse > sippulse_data.sql
 
 
+CHANGE MASTER TO MASTER_HOST='node01',
+MASTER_USER='pulsereplica',
+MASTER_PASSWORD='#pulsereplica#',
+MASTER_AUTO_POSITION=1;
+
+##Deleta duplicadas
+delete b1 from billing_order b1, billing_order b2 where b1.contract_id=b2.contract_id and b1.id > b2.id and day(b1.emission_date)=day(b2.emission_date) and month(b1.emission_date)=month(b2.emission_date) and year(b1.emission_date)=year(b2.emission_date) and b1.emission_date > '2021-07-05';

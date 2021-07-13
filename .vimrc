@@ -29,7 +29,7 @@ packloadall
    set nu relativenumber
 
 "#bout coluns
-   set signcolumn=yes
+"   set signcolumn=yes
 
 
 "# bout search
@@ -46,3 +46,6 @@ packloadall
 "config to ident yaml
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:indentLine_char = '⦙'
+
+"Save Without sudo
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!

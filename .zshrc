@@ -76,7 +76,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo colored-man-pages vagrant vscode)
+plugins=(git sudo colored-man-pages vagrant vscode docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
