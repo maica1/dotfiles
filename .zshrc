@@ -133,6 +133,8 @@ if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
 
+export pat_mdotconfig="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"
+
 #magic-space completion
 bindkey ' ' magic-space
 
