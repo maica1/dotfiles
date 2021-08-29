@@ -3,8 +3,8 @@ alias h='history'
 alias ht='history | tail'
 alias hg='history|grep'
 #lls
-alias ll='ls -la'
-alias lt='ls -lhta'
+alias ll='ls -lhA'
+alias lt='ls -lhtA'
 alias lr='ls -tRFh'
 #edit zshrc
 alias zshrc='${=EDITOR} ~/.zshrc'
