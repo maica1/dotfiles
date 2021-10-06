@@ -70,6 +70,42 @@
                 "folderUri": "file:///home/maicon"
             },
             {
+                "fileUri": "file:///home/maicon/README.md"
+            },
+            {
+                "fileUri": "file:///home/maicon/giropops-tool/README.md"
+            },
+            {
+                "fileUri": "file:///home/maicon/descomplicandokubernetes/cloud-providers/README.md"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/SipPulse/ATI.md"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/SipPulse/typescript"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/Estudo/MDEVOPS%20-%20LINUX.md"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/Estudo/dio/db/sqlserver/anki.md"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/SipPulse/temp/Mysql_nfs_test/docker-compose.yml"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/SipPulse/temp/files_sqtl.txt"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/SipPulse/temp/rabbitchecker/rabbitchecker.sh"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/SipPulse/scripts/banner-login.sh"
+            },
+            {
+                "fileUri": "file:///home/maicon/Documents/Estudo/dio/db/sqlserver/Exam-topics.md"
+            },
+            {
                 "fileUri": "file:///home/maicon/Documents/SipPulse/SSW/opensips.cfg"
             },
             {
@@ -83,9 +119,6 @@
             },
             {
                 "fileUri": "file:///home/maicon/Documents/SipPulse/scripts/login-newpbx.sh"
-            },
-            {
-                "fileUri": "file:///home/maicon/Documents/Estudo/dio/db/sqlserver/Exam-topics.md"
             },
             {
                 "fileUri": "file:///home/maicon/Documents/SipPulse/HPBX/main.26f56658a8bc18d74eb0.js"
@@ -156,7 +189,7 @@
                         "label": "Open Wor&&kspace..."
                     },
                     {
-                        "id": "submenuitem.29",
+                        "id": "submenuitem.30",
                         "label": "Open &&Recent",
                         "submenu": {
                             "items": [
@@ -287,111 +320,111 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/SipPulse/SSW/opensips.cfg",
-                                        "path": "/home/maicon/Documents/SipPulse/SSW/opensips.cfg",
+                                        "external": "file:///home/maicon/README.md",
+                                        "path": "/home/maicon/README.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/SipPulse/SSW/opensips.cfg"
+                                    "label": "~/README.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/SipPulse/SSW/sothis.cfg",
-                                        "path": "/home/maicon/Documents/SipPulse/SSW/sothis.cfg",
+                                        "external": "file:///home/maicon/giropops-tool/README.md",
+                                        "path": "/home/maicon/giropops-tool/README.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/SipPulse/SSW/sothis.cfg"
+                                    "label": "~/giropops-tool/README.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/SipPulse/SSW/eai.cfg",
-                                        "path": "/home/maicon/Documents/SipPulse/SSW/eai.cfg",
+                                        "external": "file:///home/maicon/descomplicandokubernetes/cloud-providers/README.md",
+                                        "path": "/home/maicon/descomplicandokubernetes/cloud-providers/README.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/SipPulse/SSW/eai.cfg"
+                                    "label": "~/descomplicandokubernetes/cloud-providers/README.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/Estudo/dio/db/sqlserver/instawdb.sql",
-                                        "path": "/home/maicon/Documents/Estudo/dio/db/sqlserver/instawdb.sql",
+                                        "external": "file:///home/maicon/Documents/SipPulse/ATI.md",
+                                        "path": "/home/maicon/Documents/SipPulse/ATI.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Estudo/dio/db/sqlserver/instawdb.sql"
+                                    "label": "~/Documents/SipPulse/ATI.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/SipPulse/scripts/login-newpbx.sh",
-                                        "path": "/home/maicon/Documents/SipPulse/scripts/login-newpbx.sh",
+                                        "external": "file:///home/maicon/Documents/SipPulse/typescript",
+                                        "path": "/home/maicon/Documents/SipPulse/typescript",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/SipPulse/scripts/login-newpbx.sh"
+                                    "label": "~/Documents/SipPulse/typescript"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/Estudo/dio/db/sqlserver/Exam-topics.md",
-                                        "path": "/home/maicon/Documents/Estudo/dio/db/sqlserver/Exam-topics.md",
+                                        "external": "file:///home/maicon/Documents/Estudo/MDEVOPS%20-%20LINUX.md",
+                                        "path": "/home/maicon/Documents/Estudo/MDEVOPS - LINUX.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Estudo/dio/db/sqlserver/Exam-topics.md"
+                                    "label": "~/Documents/Estudo/MDEVOPS - LINUX.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/SipPulse/HPBX/main.26f56658a8bc18d74eb0.js",
-                                        "path": "/home/maicon/Documents/SipPulse/HPBX/main.26f56658a8bc18d74eb0.js",
+                                        "external": "file:///home/maicon/Documents/Estudo/dio/db/sqlserver/anki.md",
+                                        "path": "/home/maicon/Documents/Estudo/dio/db/sqlserver/anki.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/SipPulse/HPBX/main.26f56658a8bc18d74eb0.js"
+                                    "label": "~/Documents/Estudo/dio/db/sqlserver/anki.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/Estudo/dio/db/mysql/docker-compose.yml",
-                                        "path": "/home/maicon/Documents/Estudo/dio/db/mysql/docker-compose.yml",
+                                        "external": "file:///home/maicon/Documents/SipPulse/temp/Mysql_nfs_test/docker-compose.yml",
+                                        "path": "/home/maicon/Documents/SipPulse/temp/Mysql_nfs_test/docker-compose.yml",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/Estudo/dio/db/mysql/docker-compose.yml"
+                                    "label": "~/Documents/SipPulse/temp/Mysql_nfs_test/docker-compose.yml"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/SipPulse/scripts/gitlab/docker-compose.yml",
-                                        "path": "/home/maicon/Documents/SipPulse/scripts/gitlab/docker-compose.yml",
+                                        "external": "file:///home/maicon/Documents/SipPulse/temp/files_sqtl.txt",
+                                        "path": "/home/maicon/Documents/SipPulse/temp/files_sqtl.txt",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/SipPulse/scripts/gitlab/docker-compose.yml"
+                                    "label": "~/Documents/SipPulse/temp/files_sqtl.txt"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/maicon/Documents/SipPulse/scripts/jenkins/Dockerfile",
-                                        "path": "/home/maicon/Documents/SipPulse/scripts/jenkins/Dockerfile",
+                                        "external": "file:///home/maicon/Documents/SipPulse/temp/rabbitchecker/rabbitchecker.sh",
+                                        "path": "/home/maicon/Documents/SipPulse/temp/rabbitchecker/rabbitchecker.sh",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documents/SipPulse/scripts/jenkins/Dockerfile"
+                                    "label": "~/Documents/SipPulse/temp/rabbitchecker/rabbitchecker.sh"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -438,8 +471,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -449,7 +481,7 @@
                         "label": "A&&uto Save"
                     },
                     {
-                        "id": "submenuitem.28",
+                        "id": "submenuitem.29",
                         "label": "&&Preferences",
                         "submenu": {
                             "items": [
@@ -506,8 +538,8 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.userDataSync.actions.manage",
-                                    "label": "Settings Sync is On"
+                                    "id": "workbench.userDataSync.actions.turnOn",
+                                    "label": "Turn on Settings Sync..."
                                 }
                             ]
                         }
@@ -517,7 +549,8 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File"
+                        "label": "Re&&vert File",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
@@ -695,7 +728,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "submenuitem.19",
+                        "id": "submenuitem.20",
                         "label": "&&Appearance",
                         "submenu": {
                             "items": [
@@ -736,8 +769,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel",
-                                    "checked": true
+                                    "label": "Show &&Panel"
                                 },
                                 {
                                     "id": "workbench.action.toggleEditorVisibility",
@@ -778,7 +810,7 @@
                         }
                     },
                     {
-                        "id": "submenuitem.26",
+                        "id": "submenuitem.27",
                         "label": "Editor &&Layout",
                         "submenu": {
                             "items": [
@@ -890,8 +922,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "enabled": false
+                        "label": "&&Word Wrap"
                     },
                     {
                         "id": "editor.action.toggleMinimap",
@@ -933,7 +964,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "submenuitem.31",
+                        "id": "submenuitem.32",
                         "label": "Switch &&Editor",
                         "submenu": {
                             "items": [
@@ -982,7 +1013,7 @@
                         }
                     },
                     {
-                        "id": "submenuitem.32",
+                        "id": "submenuitem.33",
                         "label": "Switch &&Group",
                         "submenu": {
                             "items": [
@@ -996,45 +1027,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1059,28 +1099,23 @@
                     },
                     {
                         "id": "editor.action.revealDefinition",
-                        "label": "Go to &&Definition",
-                        "enabled": false
+                        "label": "Go to &&Definition"
                     },
                     {
                         "id": "editor.action.revealDeclaration",
-                        "label": "Go to &&Declaration",
-                        "enabled": false
+                        "label": "Go to &&Declaration"
                     },
                     {
                         "id": "editor.action.goToTypeDefinition",
-                        "label": "Go to &&Type Definition",
-                        "enabled": false
+                        "label": "Go to &&Type Definition"
                     },
                     {
                         "id": "editor.action.goToImplementation",
-                        "label": "Go to &&Implementations",
-                        "enabled": false
+                        "label": "Go to &&Implementations"
                     },
                     {
                         "id": "editor.action.goToReferences",
-                        "label": "Go to &&References",
-                        "enabled": false
+                        "label": "Go to &&References"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1180,7 +1215,7 @@
                         "label": "Toggle &&Breakpoint"
                     },
                     {
-                        "id": "submenuitem.27",
+                        "id": "submenuitem.28",
                         "label": "&&New Breakpoint",
                         "submenu": {
                             "items": [
@@ -1235,7 +1270,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1800,16 +1836,16 @@
             "folder": "file:///home/maicon/Documents/SipPulse/cheat%20sheet",
             "backupPath": "/home/maicon/.config/Code/Backups/be9e2bc37dd2d1935a86c14b6d36de64",
             "uiState": {
-                "mode": 0,
-                "x": 1920,
-                "y": 37,
-                "width": 1920,
-                "height": 1016
+                "mode": 1,
+                "x": 0,
+                "y": 64,
+                "width": 1717,
+                "height": 903
             }
         },
         "openedWindows": []
     },
-    "pickerWorkingDir": "/home/maicon/Documents/SipPulse/SSW",
+    "pickerWorkingDir": "/home/maicon/Documents/SipPulse/temp/Mysql_nfs_test",
     "windowSplash": {
         "baseTheme": "vs-dark",
         "colorInfo": {
@@ -1827,7 +1863,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 256,
+            "sideBarWidth": 300,
             "statusBarHeight": 22,
             "windowBorder": false
         }
