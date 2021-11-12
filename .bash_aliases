@@ -12,7 +12,7 @@ alias zshrc='${=EDITOR} ~/.zshrc'
 alias duf='du -kchs *'
 alias ff='find . -type f -name'
 alias fd='find . -type d -name'
-
+alias grep='grep --color=auto'
 
 #GLOBAL 
 alias H='|head'
