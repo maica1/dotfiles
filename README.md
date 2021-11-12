@@ -53,6 +53,6 @@ mdotconfig checkout
 
 # Set git configs for the repo
 mdotconfig config --local status.showUntrackedFiles no
-mdotconfig config --local user.name maica1
-mdotconfig config --local user.email "maicon.vieira@outlook.com.br"
+mdotconfig config --local user.name user
+mdotconfig config --local user.email "mail@mail.com.br"
 ```
