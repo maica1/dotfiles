@@ -15,8 +15,8 @@ sed -i "1s|^|# dotfiles alias \nalias mdotconfig='/usr/bin/git --git-dir=$HOME/d
 ```
 
 mdotconfig config --local status.showUntrackedFiles no
-mdotconfig config user.email "maicon.vieira@outlook.com.br"
-mdotconfig config user.name "Maicon Vieira"
+mdotconfig config user.email "mail@mail.com.br"
+mdotconfig config user.name "name"
 mdotconfig remote add origin git@github.com:maica1/dotfiles.git
 mdotconfig remote -v
 
