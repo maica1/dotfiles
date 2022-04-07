@@ -56,3 +56,6 @@ mdotconfig config --local status.showUntrackedFiles no
 mdotconfig config --local user.name user
 mdotconfig config --local user.email "mail@mail.com.br"
 ```
+
+
+TODO: Provision with ansible, creating same user, same programs and recreate the MC-INSTALLKIT @MaVieira
