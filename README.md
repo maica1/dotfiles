@@ -55,6 +55,7 @@ mdotconfig checkout
 mdotconfig config --local status.showUntrackedFiles no
 mdotconfig config --local user.name user
 mdotconfig config --local user.email "mail@mail.com.br"
+mdotconfig remote set-url origin git@github.com:username/your-repository.git
 ```
 
 
