@@ -1,0 +1,7 @@
+*.log
+.cache/
+.lesshst
+.motd_shown
+.oh-my-zsh
+.sudo_as_admin_successful
+.viminfo
