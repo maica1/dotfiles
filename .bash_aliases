@@ -26,3 +26,6 @@ alias mdotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 #vpn
 alias nmup='nmcli connection up'
 alias nmdown='nmcli connection down'
+
+#tmux
+alias tmr='cd ~/.local/share/tmux/resurrect'
