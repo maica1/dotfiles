@@ -8,7 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="aussiegeek"
+#ZSH_THEME="aussiegeek"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -47,7 +48,7 @@ ENABLE_CORRECTION="true"
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-COMPLETION_WAITING_DOTS="true"
+#COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -81,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
- Preferred editor for local and remote sessions
+ #Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
  else
